@@ -86,12 +86,15 @@ li {
   }
 .header{
   &-background {
-  position: absolute;
+    position: relative;
+    width: 100%; /* Ограничиваем ширину */
+    max-width: 100vw; /* Не больше ширины экрана */
   &-mobile{
     display: none;
   }}
   &__star {
     position: absolute;
+    object-fit: cover; 
   }
     &__star--1 {
       top: 94px;
